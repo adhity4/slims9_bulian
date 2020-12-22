@@ -101,7 +101,8 @@ class Plugins
                     $this->deep++;
                     // get plugins from sub folder location
                     // deep level directory that will be scanned
-                    if ($this->deep < 3) $this->getPluginsInfo($path);
+                    // tambah plugin yang terlimit 3 dihapus
+                    if ($this->) $this->getPluginsInfo($path);
                 }
             }
             closedir($dir);
